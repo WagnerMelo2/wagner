@@ -94,7 +94,7 @@ void impar_par(){	//Questão 2, função de número par ou impar.
 		printf("numero inpar!");
 }
 
-void ano_bissexto(){	//Questão 4, função de indentificação de ano bissexto.
+void ano_bissexto(){	// Questão 4, função de indentificação de ano bissexto.
 	printf("Informe o ano para saber se ele e bissexto:");
 	scanf("%d", &A);
 	
