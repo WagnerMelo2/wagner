@@ -55,7 +55,7 @@ void media_p(){	//Questão 6. media de 3 provas/peso
 }
 
 
-void matricula(){	//Questão 8, função que imprime minha matricula e meu nome!
+void nome_matricula(){	//Questão 8, função que imprime minha matricula e meu nome!
 
 	printf("nome: José Wagner Correia de Melo.\n");
 	
@@ -84,7 +84,7 @@ void media(){	//Questão 7, função para verificar notas.
  	}
 }
 
-void par_inpar(){	//Questão 2, função de número par ou impar.
+void impar_par(){	//Questão 2, função de número par ou impar.
 	printf("Digite um numero para saber se ele e par ou impar:");
 	scanf("%d", &A);
 	
@@ -94,7 +94,7 @@ void par_inpar(){	//Questão 2, função de número par ou impar.
 		printf("numero inpar!");
 }
 
-void bissexto(){	//Questão 4, função de indentificação de ano bissexto.
+void ano_bissexto(){	//Questão 4, função de indentificação de ano bissexto.
 	printf("Informe o ano para saber se ele e bissexto:");
 	scanf("%d", &A);
 	
@@ -120,7 +120,7 @@ int main(){//	Questão 1
 			break;
 			
 			case 1:
-				par_inpar();
+				impar_par();
 			break;
 			
 			case 2:
@@ -132,7 +132,7 @@ int main(){//	Questão 1
 			break;
 			
 			case 4:
-				bissexto();
+				ano_bissexto();
 			break;
 			
 			case 5:
@@ -156,7 +156,7 @@ int main(){//	Questão 1
 			break;
 			
 			case 10:
-				matricula();
+				nome_matricula();
 			break;
 			
 				
