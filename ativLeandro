@@ -57,11 +57,11 @@ void media_p(){	//Questão 6. media de 3 provas/peso
 
 void nome_matricula(){	//Questão 8, função que imprime minha matricula e meu nome!
 
-	printf("nome: José Wagner Correia de Melo.\n");
+	printf("nome: Jose Wagner Correia de Melo.\n");
 	
 	A = 1910024355;
 	
-	printf("Minha matricula: %x\n", A);
+	printf("Minha matricula: %d\n", A);
 
 }
 
@@ -104,6 +104,47 @@ void ano_bissexto(){	// Questão 4, função de indentificação de ano bissexto
 		printf("Nao e bissexto!\n");
 }
 
+void fatorial(){ //Questão 7, função de númerro fatorial.
+	printf("Digite um numero e obtenha seu fatorial:");
+	scanf("%d", &A);
+	int i;
+	for(i = 1;A > 1;A = A-1){
+		i = i * A;
+	}
+	printf("\nO retorno fatorial e: %d\n", i);
+}
+
+void primo(){ //Questâo 8, número primo.
+	printf("Digite um numero, e saiba se ele e primo:");
+	scanf("%d", &A);
+	int i, b;
+	for(i = 2;i <= A / 2; i++){
+		if( A % i == 0){
+			b++;
+			break;
+		}
+	}
+	if (b == 0){
+		printf("%d e um numero primo\n", A);
+	
+	}
+	else{
+		printf("%d nao e um numero primo\n", A);
+	}
+}
+
+void fibo(){ //questão 9, fibonacci.
+	printf("Digite um numero, e obtenha a quantidade em elementos de fibonacci:");
+	scanf("%d", &A);
+	int a = 1;
+	int b = 0 , resul;
+	for( ;A != 0; A--){
+		resul = a + b;
+		a = b;
+		b = resul;
+		printf("%d\n", resul);	
+	}
+}
 
 
 int main(){//	Questão 1
@@ -144,15 +185,15 @@ int main(){//	Questão 1
 			break;
 			
 			case 7:
-				
+				fatorial();
 			break;
 			
 			case 8:
-			
+				primo();
 			break;
 			
 			case 9:
-				
+				fibo();
 			break;
 			
 			case 10:
