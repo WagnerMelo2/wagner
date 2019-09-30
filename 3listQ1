@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+
+int main(){
+	char x[20];
+	int a=0;
+	
+	printf("Digite um texto para saber a quantidade de caracteres: ");
+	scanf("%[^\n]s", x);
+
+	for(;x[a] != '\0';a++){}
+	
+	printf("\n%d", a);
+	
+	return 0;
+}
