@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main(){
+	char x[20], z[30];
+	int a=0, b=0;
+	
+	printf("Digite o primeiro texto para saber se sao iguais: ");
+	scanf("%[^\n]s", x);
+	getchar();
+	printf("Digite o segundo texto para saber se sao iguais: ");
+	scanf("%[^\n]s", z);
+	
+
+	while(x[a] != '\0' && z[a] != '\0') {
+		if(x[a] != z[a]){
+			b = 1;
+			break; 
+		}
+		a++;
+	}
+	
+	if(b == 0 && x[a] =='\0' && z[a] == '\0'){
+		printf("\nIguais!");
+	} else{
+		printf("\nDesiguais!");
+	}	
+	
+	return 0;
+}
