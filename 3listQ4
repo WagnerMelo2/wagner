@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+	char x[30], z[30];
+	int a=0;
+	
+	printf("Digite um texto, para obter sua copia: ");
+	scanf("%[^\n]s", x);
+	
+	while(x[a] != '\0'){
+		z[a] = x[a];
+		a++;
+	}
+	
+	z[a] = '\0';
+	printf("%s", z);
+	
+	return 0;
+	
+	
+	
+	
+}
