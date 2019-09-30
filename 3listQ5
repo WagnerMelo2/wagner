@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(){
+	char x[30], z[30];
+	int a=0, b = 0;
+	
+	printf("Digite um texto: ");
+	scanf("%[^\n]s", x);
+	getchar();
+	printf("Digite um texto para concatenalo: ");
+	scanf("%[^\n]s", z);
+	
+	for(;x[a] != '\0';a++){}
+
+	for(;z[b] != '\0';b++){
+		x[a] = z[b];
+		a++;
+	}
+	
+	x[a] = '\0';
+	printf("%s", x);
+	
+	return 0;
+	
+	
+	
+	
+}
